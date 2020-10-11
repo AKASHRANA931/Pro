@@ -10,6 +10,7 @@ header{
 }
 .icon > h2{
     padding-top: 10px;
+    padding-left: 20px;
 }
 .btn{
     display: flex;
@@ -40,13 +41,38 @@ header{
     font-family: sans-serif;
     font-size: 1.2vw;
 }
+
+.lst-item>ul{
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+    background-color: gray;
+    display: none;
+}
+
+.lst-item>ul>li{
+    list-style-type: none;
+    line-height: 1.8;
+}
+.lst-item>ul>li>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.lst-item:hover>ul{
+    display:block;
+    position: absolute;
+    box-shadow: 2px 5px 24px rgba(0,0,0,0.1);
+    border-radius: 0px 8px 0px 8px;
+}
+.lst-item:hover>a>i{
+    transform: rotate(-180deg);
+}
 .clearfix{
     clear: both;
 }
 .body{
     padding: 5px;
     background-color:ivory;
-    margin-top:px;
     box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
 }
 .card-container{
@@ -62,7 +88,7 @@ header{
     height: 270px;
     box-shadow: 2px 5px 24px rgba(0,0,0,0.1);   
     position: relative;
-    margin: 0px 70px;
+    margin: 50px 70px;
     background-color: ivory;
 }
 footer{
