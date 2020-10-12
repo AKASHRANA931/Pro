@@ -19,3 +19,8 @@ function changeImg(){
     setTimeout("changeImg()", time)
 }
 window.onload = changeImg;
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
